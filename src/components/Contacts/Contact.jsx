@@ -1,12 +1,12 @@
 import { ContactForm } from '../Form/Form';
 import { Filter } from '../Filter/Filter';
 import { ContactList } from '../List/List';
-import { Loader } from 'components/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/operations';
-import { selectError, selectIsLoading } from 'redux/slice/contactsSlice';
+import { selectError, selectIsLoading } from 'redux/selectors';
 
 export const SectionFormContacts = () => {
   const dispatch = useDispatch();
